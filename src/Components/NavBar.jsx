@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'normalize.css';
 
 
 export default function NavBar() {
