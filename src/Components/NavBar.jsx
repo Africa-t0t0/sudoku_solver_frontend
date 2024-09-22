@@ -8,7 +8,7 @@ export default function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
             <div className="container-fluid d-flex justify-content-between">
-                <a href="#" className="navbar-brand">Sudoku</a>
+                <a href="#" className="navbar-brand">Sudoku Solver</a>
                 <p className='text-white'>User: {user}</p>
             </div>
         </nav>

@@ -3,7 +3,7 @@ import 'normalize.css';
 
 
 import NavBar from './Components/NavBar';
-import Container from './Components/Container';
+import SudokuTableContainer from './Components/SudokuTableContainer';
 
 function App() {
   return (
@@ -12,11 +12,11 @@ function App() {
           <NavBar />
       </div>
       <div className="container-fluid text center">
-        <Container
+        <SudokuTableContainer
           title={"Sudoku Beta"}
         >
-          Currently showing empty sudoku
-        </Container>
+
+        </SudokuTableContainer>
       </div>
     </div>
   );

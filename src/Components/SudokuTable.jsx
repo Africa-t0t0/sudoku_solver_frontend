@@ -1,10 +1,19 @@
 import { convertJsonToMatrix } from '../Utils/utils.js'
+import './SudokuTable.css';
 
 export default function SudokuTable({ sudokuTable }) {
-    const matrix = convertJsonToMatrix(sudokuTable);
+    console.log("sudoku table!!!", sudokuTable);
+    let matrix;
+
+    if (sudokuTable === undefined) {
+        console.log("no sudoku table")
+        matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+    } else {
+        matrix = convertJsonToMatrix(sudokuTable);
+    }
 
     return (
-        <table>
+        <table className="table table-dark table-striped table-font">
             <tbody>
             {matrix.map((row, rowIndex) => (
                 <tr key={rowIndex}>
